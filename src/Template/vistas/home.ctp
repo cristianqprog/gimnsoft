@@ -1,88 +1,76 @@
 <?= $this->Html->css('pricingcss')?>
 
-<nav id="menu" class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" >
-         <?=
-         $this->Html->image('logo.png', array('alt' => 'CakePHP', 'class' => 'navbar-brand logo', 'width'=>"60",'height'=>"60" ));
-    
-        ?>
-        <?=$this->Html->link('GimnSoft', ['controller' => 'Users', 'action' => 'index'],['class' => 'navbar-brand' ]);?>
-     
-                   <br>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+			<!--menu-->
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ">
-      <li class="nav-item ">
-        <?=$this->Html->link('Home', ['controller' => 'Users', 'action' => 'index'],['class' => 'nav-link']);?>
-        
+	<nav class="navbar font-weight-bold navbar-expand-lg navbar-light fixed-top be">
+	
+			<a class="navbar-brand" href="#">GimnSoft</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+  <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto ">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Clases</a>
       </li>
-      
       <li class="nav-item">
-        <a class="nav-link" href="#">Disabled</a>
+        <a class="nav-link" href="#">Precios </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nosotros</a>
       </li>
     </ul>
-   
   </div>
-
-
 </nav>
-<div class="container">
-	<div id="carouselExampleCaptions" class="carousel slide h-12" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="carousel-item active" >
-				<?=
-				 $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));
-				 ?>
-				 
-			 
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Crossfit</h5>
-					<p>Entrenamiento basado en ejercicios constantemente variados, con movimientos funcionales ejecutados a alta intensidad.</p>
-					<?= $this->Form->button('Leer Más',['class' => 'btn btn-outline-primary']) ?>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<?=
-				 $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));
-				 ?>
-				 
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Zumba</h5>
-					<p>Al ritmo de la música Latina, bailaras y tonificaras tu cuerpo</p>
-					<?= $this->Form->button('Leer Más',['class' => 'btn btn-outline-primary']) ?>
-				</div>
-			</div>
-			<div class="carousel-item" >
-				<?=
-				 $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));
-				 ?>
-				
-				<div class="carousel-caption d-none d-md-block" >
-					<h5>GimnSoft</h5>
-					<?= $this->Form->button('Leer Más',['class' => 'btn btn-outline-primary']) ?>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Anterior</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Siguiente</span>
-		</a>
-	</div>
+		
+	</nav> 
+			
+	
+  
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      
+      <?= $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
+      	<div class="carousel-caption d-none d-md-block">
+          <h5>Slider 1</h5>
+          <p>Loren ipsum dfdss ertttt fdddd ftfgtf hhggfdd ert dfghgf</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      
+      <?= $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
+      	<div class="carousel-caption d-none d-md-block">
+          <h5>Slider 2</h5>
+          <p>Loren ipsum dfdss ertttt fdddd ftfgtf hhggfdd ert dfghgf</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+     
+      <?= $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
+      	<div class="carousel-caption d-none d-md-block">
+          <h5>Slider 3</h5>
+          <p>Loren ipsum dfdss ertttt fdddd ftfgtf hhggfdd ert dfghgf</p>
+        </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 	
 
@@ -221,15 +209,26 @@
 		 
 
 <script>
-      $(window).scroll(function() {
-        if ($("#menu").offset().top > 56) {
-            $("#menu").addClass("bg-transparent");
+$(window).scroll(function() {
+        if ($('nav').offset().top > 90) {
+            $('nav').addClass('ba');
         } else {
-            $("#menu").removeClass("bg-transparent");
+            $('nav').removeClass('ba');
         }
-       
-
       });
 </script>
 	 
-	
+<style type="">
+	.be {
+	background-color:  #5a021b !important;
+	transition: all 1s ease;	
+	}
+	.ba {
+		background-color:  #4c0116cf !important;
+		padding-top:1.2rem;
+		padding-bottom: 1.2rem;  
+		transition: all 1s ease;
+
+	}
+
+</style>

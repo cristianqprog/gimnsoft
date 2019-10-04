@@ -26,8 +26,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['bootstrap.css', 'style.css']) ?>
-    <?= $this->Html->script(['jquery-3.3.1.min.js','bootstrap.min']) ?>
+    <?= $this->Html->css(['bootstrap.css', 'https://unpkg.com/aos@2.3.1/dist/aos.css','style.css','font-awesome.min','https://fonts.googleapis.com/css?family=Dancing+Script|Vibes&display=swap" rel="stylesheet', 'https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet','https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet','maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js']) ?>
+    <?= $this->Html->css('maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' ) ?>
+    <?= $this->Html->script(['jquery-3.3.1.min.js','https://unpkg.com/aos@2.3.1/dist/aos.js','bootstrap.min','//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>

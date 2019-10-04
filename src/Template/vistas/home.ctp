@@ -1,164 +1,142 @@
-<?= $this->Html->css('pricingcss')?>
-
-			<!--menu-->
-
-	<nav class="navbar font-weight-bold navbar-expand-lg navbar-light fixed-top be">
-	
-			<a class="navbar-brand" href="#">GimnSoft</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<?= $this->Html->css('stylehome.css')?>
+<?= $this->Html->script(['home.js']) ?>
+<!-- -------------MENU-------------------------->
+<nav class="navbar font-weight-bold navbar-expand-lg navbar-light fixed-top be">
+	<a class="navbar-brand" href="#">GimnSoft</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="             #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded=" false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 
-  <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto ml-auto ">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Clases</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Precios </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Nosotros</a>
-      </li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse  ml-4 text-center" id="navbarSupportedContent">
+  	    <div class="navbar-nav mr-auto ml-auto text-center ">
+	  		<a class="nav-item nav-link" href="#" id="inicio">Inicio</a>
+	  		<a class="nav-item nav-link" href="#" id="actividades">Actividades</a>
+	  		<a class="nav-item nav-link" href="#" id="price">Precio</a>
+	  		<a class="nav-item nav-link" href="#" id="contac" >Contacto</a>
+	    </div>
+    
+        <div class="d-flex flex-row justify-content-center ">
+    	    <?= $this->Html->link('<i class="fa fa-sign-in"></i> Iniciar Sesión ', ['controller' => 'Users', 'action' => 'index'],['class' => 'btn btn-iniciosesion','escape'=>false]);?>
+        </div>
+    </div>
 </nav>
-		
-	</nav> 
-			
+ <!-- -------------MENU-------------------------->			
 	
-  
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+ <!----------------CAROUSEL-----------------------> 
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" id="inicio">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      
-      <?= $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
-      	<div class="carousel-caption d-none d-md-block">
-          <h5>Slider 1</h5>
-          <p>Loren ipsum dfdss ertttt fdddd ftfgtf hhggfdd ert dfghgf</p>
-        </div>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item slider-height  active"  >
+      <?= $this->Html->image('zumbareal.jpg', array('alt' => 'CakePHP', 'class' => 'd-block  w-100'));?>
     </div>
-    <div class="carousel-item">
-      
-      <?= $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
-      	<div class="carousel-caption d-none d-md-block">
-          <h5>Slider 2</h5>
-          <p>Loren ipsum dfdss ertttt fdddd ftfgtf hhggfdd ert dfghgf</p>
-        </div>
+    <div class="carousel-item slider-height "  >  
+		<?= $this->Html->image('crosfitreal.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
     </div>
-    <div class="carousel-item">
-     
-      <?= $this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
-      	<div class="carousel-caption d-none d-md-block">
-          <h5>Slider 3</h5>
-          <p>Loren ipsum dfdss ertttt fdddd ftfgtf hhggfdd ert dfghgf</p>
-        </div>
+    <div class="carousel-item slider-height"  >
+      <?= $this->Html->image('crosfitreal.jpg', array('alt' => 'CakePHP', 'class' => 'd-block w-100'));?>
+      	
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="sr-only">Anterior</span>
   </a>
   <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="sr-only">Siguiente</span>
   </a>
 </div>
+
+	<!-----------------CAROUSEL------------------> 
 	
+<!--------------------TEXTO CLASES-------------------->
 
+<div class="container-fluid" id="texto1" >
+	<div class="row justify-content-center align-items-center minh-100 " >
 
-<div class="container-fluid">
-	<div class="row justify-content-center align-items-center minh-100 my-5">
-
-			 <p class="font-italic" style="font-size: 110%;">Conocé Nuestras Actividades</p>
+			 <p>Conocé Nuestras Actividades</p>
 				 
 	</div>
-	<!---->
+</div>
+<!--TEXTO CLASES-->
+	
 	<!--card-->
-	<style type="text/css">
-		.single-pricing:hover{
-			background: #da4357;
-			color: #fff;
-			box-shadow: 0 0 15px rgba(0,0,0,1);
-			transform: scale(1.1);
-			z-index: 1;
-			border-radius: 25px;
-		}
-	</style>
-	<section class="container">
-		<div class="row">
-			<div class="col-md-6 pb-1 col-lg-4 ">
-				<div class="card text-white bg-primary">
+	
+	<section class="container-fluid" id="actividades" >
+	  <div class="container">
+	  	<div class="row pt-3">
+			<div class="col-md-6 col-lg-4 ">
+				<div class="card text-white" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
 						<?=
-						$this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'card-img-top'));
+						$this->Html->image('zumbaas.jpg', array('alt' => 'CakePHP', 'class' => 'card-img-top'));
 						?>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<h5 class="card-title">Zumba</h5>
+							<p class="card-text">Clases grupales de una hora, estas mismas son para cualquier genero y edad. Con Zumba vas a quemar de 50 a 300 calorias por hora. Nuestros Profes te guiaran para que vibres al ritmo de la Música.</p>
 					 </div>
 				</div>
 			</div>
 			<div class="col-md-6 pb-1 col-lg-4 ">
-				<div class="card text-white bg-primary">
+				<div class="card text-white "  data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
 						<?=
-						$this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'card-img-top'));
+						$this->Html->image('zumbaas.jpg', array('alt' => 'CakePHP', 'class' => 'card-img-top'));
 						?>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+							<h5 class="card-title">Crossfit</h5>
+							<p class="card-text">Ejercicios grupales guiados con profesores, que podras convinar entrenamiento aerobico y otras disciplinas más. Adapta para cualquier persona, ya que esta divida en grupos segun su capacidad.     </p>
 					 </div>
 				</div>
 			</div>
 			<div class="col-md-6 col-lg-4 ">
-				<div class="card text-white bg-primary">
+				<div class="card text-white" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000" >
 						<?=
-						$this->Html->image('chica.jpg', array('alt' => 'CakePHP', 'class' => 'card-img-top'));
+						$this->Html->image('zumbaas.jpg', array('alt' => 'CakePHP', 'class' => 'card-img-top'));
 						?>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
+							<h5 class="card-title">3º Edad y Rehabilitación</h5>
 							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 					 </div>
 				</div>
 			</div>
 		</div>
 	</section>
+	  </div>	
+		
+<!--card-->
 
-</div>
 
-<!---->
-<div class="container-fluid">
-	<div class="row justify-content-center align-items-center minh-100 my-5">
+<!--texto precios-->
+<div class="container-fluid" id="fondotexto2">
+	<div class="row justify-content-center align-items-center minh-100 my-5" id="texto2">
 
-			 <p class="font-italic" style="font-size: 110%;">Precios</p>
+			 <p class="font-italic" style="font-size: 110%;" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+     data-aos-duration="3000">Precios</p>
 				 
 	</div>
 
-<!--price-->
-<div class="pricing-area" >
+<!---------price---------------->
+<div class="pricing-area" id="price">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
 				<div class="single-pricing">
 					<div class="head-text">
-						<h3>Basic</h3>
+						<h3>Zumba</h3>
 					</div>
 					<div class="price-area">
-						$11 <span class="duration">Por Dia</span>
+						$500 <span class="duration">Lunes, Miercoles y Viernes</span>
 					</div>
-					<div class="feature-area">
-						<ul>
-							<li>texto</li>
-							<li>texto</li>
-							<li>texto</li>
-						</ul>
+					<div class="price-area">
+						$350<span class="duration">2 veces x semana</span>
 					</div>
 				</div>
 				
@@ -167,17 +145,16 @@
 		<div class="col-lg-4 col-md-6">
 				<div class="single-pricing best-deal">
 					<div class="head-text">
-						<h3>Basic</h3>
+						<h3>Crossfit</h3>
 					</div>
 					<div class="price-area">
-						$11 <span class="duration">Por Dia</span>
+						$450 <span class="duration">Lunes a Viernes</span>
 					</div>
-					<div class="feature-area">
-						<ul>
-							<li>texto</li>
-							<li>texto</li>
-							<li>texto</li>
-						</ul>
+					<div class="price-area">
+						$300 <span class="duration">2 veces x semana</span>
+					</div>
+					<div class="price-area">
+						$90 <span class="duration">x día</span>
 					</div>
 				</div>
 		</div> 
@@ -204,31 +181,83 @@
 		
 </div>
 </div>
-		 
+<!--price-->
 
-		 
+<!-------------FOOTER Y CONTACTO FORM------------->
 
-<script>
-$(window).scroll(function() {
-        if ($('nav').offset().top > 90) {
-            $('nav').addClass('ba');
-        } else {
-            $('nav').removeClass('ba');
-        }
-      });
-</script>
+<div id="contac">
+	<div class="row" id="contatti">
+	<div class="container mt-5" >
+
+	    <div class="row" style="height:550px;">
+	      <div class="col-md-6 maps" >
+	         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.560640487307!2d-68.44839678524987!3d-33.068032085372394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e439def6645eb%3A0x6c0b9fcede0b6dc4!2sJuana%20Flores%2C%20Mendoza%2C%20Argentina!5e0!3m2!1ses!2sit!4v1569877562161!5m2!1ses!2sit" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	      </div>
+	      <div class="col-md-6">
+	        <h2 class="text-uppercase mt-3 font-weight-bold text-white">Envianos un mensaje con tu consulta</h2>
+	        <form action="">
+	          <div class="row">
+	            <div class="col-lg-6">
+	              <div class="form-group">
+	                <?= $this->Form->input('name', ['class' => 'form-control mt-2', 'placeholder' => 'Nombre', 'label' => false, 'required']) ?>
+	              </div>
+	            </div>
+	            <div class="col-lg-6">
+	              <div class="form-group">
+	                <?= $this->Form->input('lastname', ['class' => 'form-control mt-2', 'placeholder' => 'Apellido', 'label' => false, 'required']) ?>
+	              </div>
+	            </div>
+	            <div class="col-lg-6">
+	              <div class="form-group">
+	               <?= $this->Form->input('email', ['class' => 'form-control mt-2', 'placeholder' => 'Correo Electronico', 'label' => false, 'required']) ?>
+	        
+	              </div>
+	            </div>
+	            <div class="col-lg-6">
+	              <div class="form-group">
+	                <?= $this->Form->input('number', ['class' => 'form-control mt-2', 'placeholder' => 'numero de telefono', 'label' => false, 'required']) ?>
+	              </div>
+	            </div>
+	            <div class="col-12">
+	              <div class="form-group">
+	              	<?= $this->Form->textarea('number', ['id'=>'exampleFormControlTextarea1','rows'=>'3', 'placeholder' => 'Ingrese su Mensaje', 'label' => false, 'required']) ?>
+	               
+	              </div>
+	            </div>
+	            <div class="col-12">
+	            <div class="form-group">
+	              <div class="form-check">
+	                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+	                <label class="form-check-label" for="invalidCheck2">
+	                  CAPTCHA
+	                </label>
+	              </div>
+	            </div>
+	            </div>
+	            <div class="col-12">
+	            	 <?= $this->Form->button('Enviar',['class' => 'btn btn-success']) ?>
+	            </div>
+	          </div>
+	        </form>
+	        <div class="text-white">
+	        <h2 class="text-uppercase mt-4 font-weight-bold">NUESTRAS REDES Y CONTACTOS</h2>
+
+	        <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+2634) 123456</a><br>
+	       
+	        <i class="fas fa-envelope mt-3"></i> <a href="">info@test.it</a><br>
+	        <i class="fas fa-globe mt-3"></i> Av. Tucuman, 123, San Martín<br>
+	        <div class="my-4">
+	        <a href=""><i class="fab fa-facebook fa-3x pr-4"></i></a>
+	        <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+	        </div>
+	        </div>
+	      </div>
+
+	    </div>
+	</div>
+	</div>
+</div>	
+<!--FOOTER-->		 
+
+
 	 
-<style type="">
-	.be {
-	background-color:  #5a021b !important;
-	transition: all 1s ease;	
-	}
-	.ba {
-		background-color:  #4c0116cf !important;
-		padding-top:1.2rem;
-		padding-bottom: 1.2rem;  
-		transition: all 1s ease;
-
-	}
-
-</style>

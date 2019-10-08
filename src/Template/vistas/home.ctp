@@ -1,7 +1,8 @@
 <?= $this->Html->css('stylehome.css')?>
-<?= $this->Html->script(['home.js']) ?>
+
 <!-- -------------MENU-------------------------->
 <nav class="navbar font-weight-bold navbar-expand-lg navbar-light fixed-top be">
+
 	<a class="navbar-brand" href="#">GimnSoft</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="             #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded=" false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -17,6 +18,9 @@
     
         <div class="d-flex flex-row justify-content-center ">
     	    <?= $this->Html->link('<i class="fa fa-sign-in"></i> Iniciar Sesión ', ['controller' => 'Users', 'action' => 'index'],['class' => 'btn btn-iniciosesion','escape'=>false]);?>
+    	   <?=  $this->Html->link('<i class="fa fa-sign-in"></i>', 'http://www.google.com',['escape'=>false]); ?>
+
+    	    
         </div>
     </div>
 </nav>
@@ -65,13 +69,12 @@
 <!--TEXTO CLASES-->
 	
 	<!--card-->
-	
-	<section class="container-fluid" id="actividades" >
-	  <div class="container">
+<section class="container-fluid" id="actividades" >
+		
+	  <div class="container" >
 	  	<div class="row pt-3">
 			<div class="col-md-6 col-lg-4 ">
-				<div class="card text-white" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
+				<div class="card text-white" data-aos="flip-left" data-aos-easing="ease-out-cubic"
      data-aos-duration="2000">
 						<?=
 						$this->Html->image('zumbaas.jpg', array('alt' => 'CakePHP', 'class' => 'card-img-top'));
@@ -115,7 +118,8 @@
 
 
 <!--texto precios-->
-<div class="container-fluid" id="fondotexto2">
+
+	<div class="container-fluid" id="fondotexto2">
 	<div class="row justify-content-center align-items-center minh-100 my-5" id="texto2">
 
 			 <p class="font-italic" style="font-size: 110%;" data-aos="flip-left" data-aos-easing="ease-out-cubic"
@@ -125,6 +129,7 @@
 
 <!---------price---------------->
 <div class="pricing-area" id="price">
+	
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6">
@@ -132,10 +137,10 @@
 					<div class="head-text">
 						<h3>Zumba</h3>
 					</div>
-					<div class="price-area">
+					<div class="price-area mb-5">
 						$500 <span class="duration">Lunes, Miercoles y Viernes</span>
 					</div>
-					<div class="price-area">
+					<div class="price-area mt-1">
 						$350<span class="duration">2 veces x semana</span>
 					</div>
 				</div>
@@ -181,6 +186,8 @@
 		
 </div>
 </div>
+
+
 <!--price-->
 
 <!-------------FOOTER Y CONTACTO FORM------------->
@@ -240,15 +247,50 @@
 	          </div>
 	        </form>
 	        <div class="text-white">
-	        <h2 class="text-uppercase mt-4 font-weight-bold">NUESTRAS REDES Y CONTACTOS</h2>
+	        <h2 class="text-uppercase mt-4 font-weight-bold mb-5" >NUESTRAS REDES Y CONTACTOS</h2>
+	        	<section>
+	        		<div class="redes" id="facebook">
+	        			<?=$this->Html->link('<i class="fa fa-facebook"></i>', 'www.facebook.com',['class'=>'iconef', 'escape'=>false]); ?>
+	        		</div>
+	        		<div class="redes" id="instagram">
+	        			<?=$this->Html->link('<i class="fa fa-instagram"></i>', 'https://www.instagram.com/crisquevedo01/',['class'=>'iconei','target' => '_blank', 'escape'=>false]); ?>
+	        		</div>
+	        	</section>
+	        	<style type="text/css">
+	        		.redes{
+	        			width: 50px;
+	        			height: 50px;
+	        			float: left;
+	        			margin-left: 20px;
+	        			transition: all 0.4s ease-out;
+	        			border-radius: 50px;
+	        		}
+	        		
+	        		.redes#facebook{
+	        		background: linear-gradient(23deg,#0619f5, #000000);
+	        			 
+	        		}
+	        		.redes#instagram{
+	        		background: linear-gradient(180deg,#f506cd, #e3e608);
+	        		}
+	        		.iconef{
+	        		padding-left: 14px;
+    				font-size: 32px;
+	        		
+	        			
+	        		}
+	        		.iconei{
+	        		padding-left: 11px;
+    				font-size: 32px;
+	        		
+	        			
+	        		}
+	        		.redes:hover{
+	        			cursor: pointer;
+	        			transform: translateY(-20px);
 
-	        <i class="fas fa-phone mt-3"></i> <a href="tel:+">(+2634) 123456</a><br>
-	       
-	        <i class="fas fa-envelope mt-3"></i> <a href="">info@test.it</a><br>
-	        <i class="fas fa-globe mt-3"></i> Av. Tucuman, 123, San Martín<br>
-	        <div class="my-4">
-	        <a href=""><i class="fab fa-facebook fa-3x pr-4"></i></a>
-	        <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+	        		}
+	        	</style>
 	        </div>
 	        </div>
 	      </div>
@@ -257,7 +299,8 @@
 	</div>
 	</div>
 </div>	
-<!--FOOTER-->		 
-
+<!--FOOTER-->	
+<!--script-->	 
+<?= $this->Html->script(['home.js']) ?>
 
 	 

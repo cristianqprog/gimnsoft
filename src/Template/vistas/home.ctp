@@ -17,8 +17,8 @@
 	    </div>
     
         <div class="d-flex flex-row justify-content-center ">
-    	    <?= $this->Html->link('<i class="fa fa-sign-in"></i> Iniciar Sesión ', ['controller' => 'Users', 'action' => 'index'],['class' => 'btn btn-iniciosesion','escape'=>false]);?>
-    	   <?=  $this->Html->link('<i class="fa fa-sign-in"></i>', 'http://www.google.com',['escape'=>false]); ?>
+    	    <?= $this->Html->link('<i class="fa fa-sign-in"></i> Menú General', ['controller' => 'vistas', 'action' => 'menuGral'],['class' => 'btn btn-iniciosesion','escape'=>false]);?>
+    	  
 
     	    
         </div>

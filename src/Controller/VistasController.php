@@ -12,4 +12,7 @@ class VistasController extends AppController
 	public function home(){
 		
 	}
+	public function menuGral(){
+		
+	}
 }

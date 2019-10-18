@@ -64,11 +64,6 @@ class UsersTable extends Table
             ->notEmptyString('last_name');
 
         $validator
-            ->email('email')
-            ->requirePresence('email', 'create')
-            ->notEmptyString('email');
-
-        $validator
             ->scalar('role')
             ->requirePresence('role', 'create')
             ->notEmptyString('role');
@@ -79,19 +74,5 @@ class UsersTable extends Table
             ->notEmptyString('active');
 
         return $validator;
-    }
-
-    /**
-     * Returns a rules checker object that will be used for validating
-     * application integrity.
-     *
-     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
-     * @return \Cake\ORM\RulesChecker
-     */
-    public function buildRules(RulesChecker $rules)
-    {
-        $rules->add($rules->isUnique(['email']));
-
-        return $rules;
     }
 }

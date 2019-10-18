@@ -1,0 +1,26 @@
+a{
+	color: white;
+}
+a:hover{
+	color: white;
+}
+.table thead th{
+	background-color: #003067
+}
+.table-dark th, .table-dark td, .table-dark thead th {
+    border-color: #ffffff;
+}
+.table-dark{
+	background-color:#01282f;
+}
+body{
+	background: url(../img/patron.jpg)no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+
+}
+.text-center{
+	background-color:#3289cdd6;
+}

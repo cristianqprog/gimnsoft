@@ -1,15 +1,29 @@
-/* nav animacion*/
+.carousel-item{
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* NAV ANIMACION*/
 .be {
-	background-color:  #02425a !important;
-	transition: all 1s ease;	
+background-color:  #02425a !important;
+transition: all 1s ease;	
 }
 .ba {
-	background-color: #19161dc7 !important;
-	padding-top:1.2rem;
-	padding-bottom: 1.2rem;  
-	transition: all 1s ease;
-	}
-	/* nav animacion*/
+background-color: #19161dc7 !important;
+padding-top:1.0rem;
+transition: all 1s ease;
+}
+/* LINK MENU*/
+.navbar-light .navbar-nav .nav-link {
+text-transform: uppercase;
+}	
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+color: rgb(255, 252, 252);
+text-decoration: underline;
+text-decoration-color: turquoise;
+}	
+/* NAV ANIMACION*/
 /* btn inicio sesion*/
 .btn-iniciosesion {
   color: #fff;
@@ -22,13 +36,107 @@
   border-color: #fff;
 }
 /* btn inicio sesion*/
-/* -------texto clases----- */
+
+/* -------texto clases texto price----- */
 #texto1{
-background: linear-gradient(67deg,#095c69, #000408);
+background: #ab0831;
 color: white;
 font-family:'Saira Stencil One', cursive;
-font-size: 30px;
+-webkit-box-shadow: 13px 11px 5px -7px rgba(0,0,0,1);
+-moz-box-shadow: 13px 11px 5px -7px rgba(0,0,0,1);
+box-shadow: 13px 11px 5px -7px rgba(0,0,0,1);
 
+}
+#texto2{
+background: #ab0831;
+color: white;
+width: 250px;
+font-family:'Saira Stencil One', cursive;
+-webkit-box-shadow: 13px 11px 5px -7px rgba(0,0,0,1);
+-moz-box-shadow: 13px 11px 5px -7px rgba(0,0,0,1);
+box-shadow: 13px 11px 5px -7px rgba(0,0,0,1);
+letter-spacing: 5px;	
+}	
+@media (max-width:600px){
+#texto1{
+font-size: 24px;
+width: 350px;
+height: 40px;
+position: relative;
+bottom: 19px;
+  }	
+}
+@media (max-width:600px){
+#texto2{
+font-size: 24px;
+width: 350px;
+height: 40px;
+position: relative;
+bottom: 19px;
+  }	
+}
+@media (min-width:600px){
+#texto1{
+font-size: 29px;
+width: 500px;
+height: 40px;
+position: relative;
+bottom: 20px;
+  }	
+}
+@media (min-width:600px){
+#texto2{
+font-size: 29px;
+width: 500px;
+height: 40px;
+position: relative;
+bottom: 20px;
+  }	
+}
+@media (min-width:768px){
+#texto1{
+font-size: 32px;
+width: 600px;
+height: 45px;
+position: relative;
+bottom: 20px;
+  }	
+}
+@media (min-width:768px){
+#texto2{
+font-size: 32px;
+width: 600px;
+height: 45px;
+position: relative;
+bottom: 20px;
+  }	
+}
+@media (min-width:992px){
+#texto2{
+font-size: 39px;
+width: 755px;
+height: 51px;
+position: relative;
+bottom: 21px;
+  }	
+}
+@media (min-width:1200px){
+#texto1{
+font-size: 41px;
+width: 900px;
+height: 60px;
+position: relative;
+bottom: 23px;
+  }	
+}
+@media (min-width:1200px){
+#texto2{
+font-size: 41px;
+width: 700px;
+height: 60px;
+position: relative;
+bottom: 23px;
+  }	
 }
 /* -------texto clases----- */
 /* -------card clases----- */
@@ -51,9 +159,10 @@ text-transform: uppercase;
 font-size: 14px;
 }
 .card-body{
-background: linear-gradient(45deg, #000000d9, #f70404);
+background: linear-gradient(45deg, #065640d9, #2f0011b8);
 height: 200px;
 }
+
 /* -------card clases----- */
 /*  precios */
 .pricing-area{
@@ -72,13 +181,7 @@ height: 100%;
 background-size: contain;
 	
 }
-#texto2{
-	background: linear-gradient(67deg, #095c69, #000408);
-	color: white;
-	font-family:'Saira Stencil One', cursive;
-	font-size: 38px;
-	-webkit-box-shadow: 2px 2px 5px #000;
-  }
+
 .single-pricing {
 	position: relative;
 	text-align: center;
@@ -99,62 +202,65 @@ background-size: contain;
 
 
 .head-text{
-	background-color: transparent;
-	border-bottom: 0;
-	padding: 15px 0;
-	border-radius: 3px 3px 0 0;
+background-color: transparent;
+border-bottom: 0;
+padding: 15px 0;
+border-radius: 3px 3px 0 0;
+background-color: #009688;
+border-radius: inherit;
 }
+
 .head-text h3 {
-	font-family:'Black Ops One', cursive;
-	margin: 0;
-	font-size: 20px;
-	letter-spacing: 12px;
-	font-weight: 700;
-	
-	color: #fafafa;
-
+font-family:'Black Ops One', cursive;
+margin: 0;
+font-size: 20px;
+letter-spacing: 12px;
+font-weight: 700;
+color: #fafafa;
 }
+
 .price-area .price-area span{
-	font-weight: 400;
+font-weight: 400;
 }
+
 .price-area{
-	position: relative;
-	padding: 10px 0;
-	color: #fff;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 1;
-
-  	border-radius: 50px;
-    margin-bottom: 2px;
-    border-top-left-radius: 0px;
-    border-bottom-style: inset;
-    border-bottom-color: #ffffff;
-    border-bottom-right-radius: initial;
-    border-top-right-radius: inherit;
-    background-color: #36463778;
+position: relative;
+padding: 10px 0;
+color: #fff;
+font-weight: 300;
+font-size: 20px;
+line-height: 1;
+border-radius: 50px;
+margin-bottom: 2px;
+border-top-left-radius: 0px;
+border-bottom-style: inset;
+border-bottom-color: #ffffff;
+border-bottom-right-radius: initial;
+border-top-right-radius: inherit;
+background-color:#030410;
 }
+
 .price-area span.duration {
-	display: block;
-	font-size: 12px;
-	font-weight: 600;
-	text-transform: uppercase;
-	
-	text-align: center;
-	letter-spacing: 1px;
-	vertical-align: baseline;
-	color: #ffffff;
-	margin: 20px 0 3px;
-	border-radius: 25px;
-	height: 14px;
-	
+display: block;
+font-size: 12px;
+font-weight: 600;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 1px;
+vertical-align: baseline;
+color: #ffffff;
+margin: 20px 0 3px;
+border-radius: 25px;
+height: 14px;
+}
 
-}
 .price-area:after, .feature-area{
-	border:0;
-	font-family: poppins;
+border:0;
+font-family: poppins;
 }
-/* hover de precios */
+
+
+/*HOVER PRECIOS */
 .single-pricing:hover {
 background: linear-gradient(45deg, #05156b, #000000);
 color: white;
@@ -164,97 +270,165 @@ z-index: 1;
 border-radius: 10px;
 transition: all 1s ease;
 background:#262626 url('../img/vector3.jpg') ;
- 
 }
 
 .feature-area ul{
-	margin:0;
-	padding: 15px 0;
-	list-style: none;
+margin:0;
+padding: 15px 0;
+list-style: none;
+}
 
-}
 .feature-area li{
-	padding: 6px 0;
-	font-size: 14px;
+padding: 6px 0;
+font-size: 14px;
 }
+
 @media (max-width: 767px){
-	h3 {
-		font-size: 20px;
-		
-	}
-	.single-pricing {
-		margin-bottom: 30px;
-	}
+h3 {
+font-size: 20px;
+}
+
+.single-pricing {
+margin-bottom: 30px;
+}
 }
 
 .carousel{
-		margin-top: 23px;
-		
-	}
-@media  (max-width: 920px){
-	.carousel{
-		margin-top: 60px;
-		
-	}
-	
+margin-top: 23px;
+background-size: contain;
 }
-/* -------precios----- */
+
+@media  (max-width: 920px){
+
+.carousel{
+margin-top: 60px;
+		
+}
+}
+
+/* PRECIOS */
 
 /*FOOTER*/
 #contatti{
-  background: #70c3be;
-  letter-spacing: 2px;
-  }
+background: linear-gradient(45deg, #012e42, #000000);
+letter-spacing: 2px;
+}
 #contatti a{
-  color: #fff;
-  text-decoration: none;
+color: #fff;
+text-decoration: none;
 }
 
 @media (max-width: 575.98px) {
 
-  #contatti{padding-bottom: 800px;}
-  #contatti .maps iframe{
-    width: 100%;
-    height: 450px;
-  }
- }
+#contatti{
+padding-bottom: 800px;
+height: 950px;
+}
 
+#contatti .maps iframe{
+width: 80%;
+height: 250px;
+position: relative;
+left: 55px;
+}
 
+h1, h2{
+font-size: 1.3rem;
+position: relative;
+left: 22px;
+}
+
+form{
+width: 90%;
+margin-left: 29px;
+}
+
+.redes{
+position: relative;
+left: 150px;
+bottom: 14px;	
+}
+}
+/*BOTON ENVIAR*/
+.btn-enviar{
+color: #28a745;
+border-color: #4CAF50;
+width: 90px;
+height: 43px;
+}
+.btn-enviar:hover {
+color: #00f3ff;
+text-decoration: none;
+border-color: #00f3ff;
+}
+/*ICONO ENVIAR*/
+#enviar {
+font-size: 40px;
+transform: rotate(12deg);
+position: relative;
+bottom: 7px;
+}
+/*ICONO ENVIAR*/
 @media (min-width: 576px) {
+h1, h2{
+font-size: 1.5rem;
+height: 2.0rem;
+}
 
-   #contatti{padding-bottom: 800px;}
+#contatti{
+padding-bottom: 800px;
+height: 1150px;
+}
 
-   #contatti .maps iframe{
-     width: 100%;
-     height: 450px;
-   }
- }
+#contatti .maps iframe{
+width: 100%;
+height: 400px;
+margin-top: 20px;
+}
+
+.tituloform{
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.redes{
+margin-top: -20px;
+position: relative;
+left: 170px;
+}
+}
 
 @media (min-width: 768px) {
 
-  #contatti{padding-bottom: 350px;}
+#contatti{
+padding-bottom: 350px;
+height: 720px;
+}
 
-  #contatti .maps iframe{
-    width: 100%;
-    height: 850px;
-  }
+#contatti .maps iframe{
+width: 105%;
+height: 60%;
+}
+
+.redes{
+position: relative;
+top: 15px;
+left: 60px;
+}
 }
 
 @media (min-width: 992px) {
-  #contatti{padding-bottom: 200px;}
 
-   #contatti .maps iframe{
-     width: 100%;
-     height: 700px;
-   }
+#contatti{padding-bottom: 200px;
 }
 
+#contatti .maps iframe{
+width: 100%;
+height: 80%;;
+}
+}
 
 #author a{
-  color: #fff;
-  text-decoration: none;
-    
-}
-.imgprice{
-
+color: #fff;
+text-decoration: none;
 }

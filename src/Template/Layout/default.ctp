@@ -36,10 +36,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 </head>
 
 <body>
-   <?= $this->element('menu') ?>
+   
+    
     <?= $this->Flash->render() ?>
     <div class="">
         <?= $this->fetch('content') ?>
+       
     </div>
     <footer>
     </footer>

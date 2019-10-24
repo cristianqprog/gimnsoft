@@ -1,26 +1,48 @@
-a{
-	color: white;
-}
-a:hover{
-	color: white;
-}
-.table thead th{
-	background-color: #003067
-}
-.table-dark th, .table-dark td, .table-dark thead th {
-    border-color: #ffffff;
-}
-.table-dark{
-	background-color:#01282f;
-}
+
 body{
-	background: url(../img/patron.jpg)no-repeat center center fixed;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover;
+	/*background: url(../img/vectores.jpg)no-repeat center center fixed;
+	background-size:cover;*/
+
 
 }
-.text-center{
-	background-color:#3289cdd6;
+/*TITULO*/
+.text-left{
+  background: linear-gradient(45deg, #05a274,#04ff0094, #ffffff00);
+  border-radius: 3px;
+  color: white;	
+  height: 60px;
+  font-size: 40px;
+ }	
+
+@media (max-width:600px){
+.text-left{
+  position: relative;
+  left: -225px;
+  padding-left: 208px;
+ }
+} 
+
+@media (min-width:600px){
+.text-left{
+  position: relative;
+  left: -140px;
+  padding-left: 123px;
+ }
+} 
+
+@media (min-width: 940px){
+.text-left{
+  position: relative;
+  left: -170px;
+  padding-left: 153px;
+ }   
 }
+
+@media (min-width: 1440px){
+.text-left{
+  position: relative;
+  left: -200px;
+  padding-left: 183px;
+ }   
+}
+/*TITULO*/

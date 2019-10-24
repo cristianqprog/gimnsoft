@@ -25,6 +25,7 @@
             echo $this->Form->control('last_name');
             echo $this->Form->control('role');
             echo $this->Form->control('active');
+            echo $this->Form->control('photo');
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

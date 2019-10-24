@@ -73,6 +73,12 @@ class UsersTable extends Table
             ->requirePresence('active', 'create')
             ->notEmptyString('active');
 
+        $validator
+            ->scalar('photo')
+            ->maxLength('photo', 100)
+            ->requirePresence('photo', 'create')
+            ->notEmptyString('photo');
+
         return $validator;
     }
 }

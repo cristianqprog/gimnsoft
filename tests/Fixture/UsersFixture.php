@@ -20,6 +20,7 @@ class UsersFixture extends TestFixture
         'last_name' => ['type' => 'string', 'length' => 100, 'null' => false, 'default' => null, 'collate' => 'utf8_spanish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'role' => ['type' => 'string', 'length' => null, 'null' => false, 'default' => null, 'collate' => 'utf8_spanish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'active' => ['type' => 'boolean', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
+        'photo' => ['type' => 'string', 'length' => 100, 'null' => false, 'default' => null, 'collate' => 'utf8_spanish_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'comment' => '', 'precision' => null],
         '_constraints' => [
@@ -45,8 +46,9 @@ class UsersFixture extends TestFixture
                 'last_name' => 'Lorem ipsum dolor sit amet',
                 'role' => 'Lorem ipsum dolor sit amet',
                 'active' => 1,
-                'created' => '2019-10-12 15:29:47',
-                'modified' => '2019-10-12 15:29:47'
+                'photo' => 'Lorem ipsum dolor sit amet',
+                'created' => '2019-10-24 00:06:29',
+                'modified' => '2019-10-24 00:06:29'
             ],
         ];
         parent::init();

@@ -11,6 +11,7 @@ use Cake\ORM\Entity;
  * @property string $last_name
  * @property string $role
  * @property bool $active
+ * @property string $photo
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  */
@@ -30,6 +31,7 @@ class User extends Entity
         'last_name' => true,
         'role' => true,
         'active' => true,
+        'photo' => true,
         'created' => true,
         'modified' => true
     ];

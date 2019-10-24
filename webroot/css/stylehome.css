@@ -1,8 +1,15 @@
+
+body{
+/* quite scrool horizontal*/	
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
 .carousel-item{
 -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 /* NAV ANIMACION*/
 .be {

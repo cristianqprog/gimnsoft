@@ -201,7 +201,7 @@
 	      	<section class="tituloform">
 	        <h2 class="text-uppercase mt-3 font-weight-bold text-white">Envianos un mensaje con tu consulta</h2>
 	        </section>
-	        <form action="">
+	       <?= $this->Form->create(null, ['url' => ['action' => 'email']]) ?>
 	          <div class="row" >
 	            <div class="col-lg-6">
 	              <div class="form-group">
@@ -226,14 +226,14 @@
 	            </div>
 	            <div class="col-12">
 	              <div class="form-group">
-	              	<?= $this->Form->textarea('number', ['id'=>'exampleFormControlTextarea1','rows'=>'3', 'placeholder' => 'Ingrese su Mensaje', 'label' => false, 'required']) ?>
+	              	<?= $this->Form->textarea('text', ['id'=>'exampleFormControlTextarea1','rows'=>'3', 'placeholder' => 'Ingrese su Mensaje', 'label' => false, 'required']) ?>
 	               
 	              </div>
 	            </div>
 	            <div class="col-12">
 	            <div class="form-group">
 	              <div class="form-check">
-	                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+	                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" >
 	                <label class="form-check-label" for="invalidCheck2">
 	                  CAPTCHA
 	                </label>
@@ -244,7 +244,7 @@
 	            	 <?= $this->Form->button('<i class="far fa-paper-plane", id="enviar"></i>',['class' => 'btn btn-enviar']); ?>
 	            </div>
 	          </div>
-	        </form>
+	        <?= $this->Form->end() ?>
 	        <div class="text-white">
 	        <h2 class="text-uppercase mt-4 font-weight-bold mb-5" >NUESTRAS REDES Y CONTACTOS</h2>
 	        	<section>

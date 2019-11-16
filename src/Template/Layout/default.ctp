@@ -38,10 +38,10 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <body>
    
     
-    <?= $this->Flash->render() ?>
-    <div class="">
+   
+    <div class="container">
         <?= $this->fetch('content') ?>
-       
+         <?= $this->Flash->render() ?>
     </div>
     <footer>
     </footer>

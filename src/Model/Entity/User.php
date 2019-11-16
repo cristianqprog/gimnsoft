@@ -7,11 +7,10 @@ use Cake\ORM\Entity;
  * User Entity
  *
  * @property int $id
- * @property string $first_name
- * @property string $last_name
+ * @property string $email
+ * @property string $password
  * @property string $role
  * @property bool $active
- * @property string $photo
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  */
@@ -27,12 +26,20 @@ class User extends Entity
      * @var array
      */
     protected $_accessible = [
-        'first_name' => true,
-        'last_name' => true,
+        'email' => true,
+        'password' => true,
         'role' => true,
         'active' => true,
-        'photo' => true,
         'created' => true,
         'modified' => true
+    ];
+
+    /**
+     * Fields that are excluded from JSON versions of the entity.
+     *
+     * @var array
+     */
+    protected $_hidden = [
+        'password'
     ];
 }

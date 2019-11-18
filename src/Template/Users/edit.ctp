@@ -1,32 +1,23 @@
-<?php
-/**
- * @var \App\View\AppView $this
- * @var \App\Model\Entity\User $user
- */
-?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Form->postLink(
-                __('Delete'),
-                ['action' => 'delete', $user->id],
-                ['confirm' => __('Are you sure you want to delete # {0}?', $user->id)]
-            )
-        ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
-<div class="users form large-9 medium-8 columns content">
-    <?= $this->Form->create($user) ?>
-    <fieldset>
-        <legend><?= __('Edit User') ?></legend>
-        <?php
-            echo $this->Form->control('email');
-            echo $this->Form->control('password');
-            echo $this->Form->control('role');
-            echo $this->Form->control('active');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<?= $this->Html->css('styleedit.css')?>
+<div>
+    <div class="titulo">
+        <h2>Editar Usuario</h2>
+    </div>
+    <div class="formulario-grupo">
+       
+        <?= $this->Form->create($user) ?>
+                <fieldset>
+                    
+                    <?php
+                        echo $this->Form->control('email',['label'=>'Correo Electronico']);
+                        echo $this->Form->control('password',['label'=>'Contraseña']);
+                        echo $this->Form->control('role',['label'=>'Rol','value'=>'j','value'=>'jnn']);
+                        echo $this->Form->control('active',['label'=>'Activo']);
+                       echo $this-> Form->input('Rol', ['options'=>['admin'=>'Administrador','users'=>'Usuario']]);
+                    ?>
+                </fieldset>
+                <?= $this->Form->button('Editar',['class' => 'btn btn-outline-primary']) ?>    
+    </div>
 </div>
+        
+   

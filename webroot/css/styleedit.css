@@ -1,0 +1,22 @@
+  @media (max-width:768px){
+ .container {
+    margin-top: 90px;
+    }
+}
+@media (min-width:768px){
+.container {
+    max-width: 720px;
+    width: 500px;
+    position: relative;
+    top: 90px;
+    }
+}
+.titulo{
+    background: #0cc1c1;
+    padding: 2px; 
+}
+h2{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}

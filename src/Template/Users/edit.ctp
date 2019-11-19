@@ -11,12 +11,13 @@
                     <?php
                         echo $this->Form->control('email',['label'=>'Correo Electronico']);
                         echo $this->Form->control('password',['label'=>'Contraseña']);
-                        echo $this->Form->control('role',['label'=>'Rol','value'=>'j','value'=>'jnn']);
+                        echo $this-> Form->input('role', ['options'=>['admin'=>'Administrador','users'=>'Usuario'],'label'=>'Rol']);
                         echo $this->Form->control('active',['label'=>'Activo']);
-                       echo $this-> Form->input('Rol', ['options'=>['admin'=>'Administrador','users'=>'Usuario']]);
+                       
                     ?>
                 </fieldset>
-                <?= $this->Form->button('Editar',['class' => 'btn btn-outline-primary']) ?>    
+                <?= $this->Form->button('Editar',['class' => 'btn btn-outline-primary']) ?>   
+                <?= $this->Form->end() ?> 
     </div>
 </div>
         

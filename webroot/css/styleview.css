@@ -1,0 +1,93 @@
+
+.titulo{
+	position: relative;
+    top: 130px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+    background: #034a6bfa;
+    text-align: center;
+    /*box-shadow: 5px 0px 6px 0px black;*/
+}
+h2{
+	position: relative;
+    top: 19px;
+    color: white;
+}
+.info{
+	background-color: #40acf9;
+	width: 100%;
+    position: relative;
+    /*left: 230px;*/
+    height: 310px;
+    top: 129px;
+    box-shadow:6px 4px 8px 0px black;
+}
+.email{
+	font-weight: 600;
+    font-size: larger;
+    position: relative;
+    left: 90px;
+    color: black;
+    bottom: 12px;
+    text-align: center;
+    
+}
+.icon {
+    font-family: "Font Awesome 5 Pro";
+    font-size: 50px;
+    position: relative;
+    top: 23px;
+    left: 200px;
+    color: white;
+}
+.pass{
+	font-family: "Font Awesome 5 Pro";
+    font-size: 45px;
+    position: relative;
+    top: 23px;
+    left: 200px;
+    color: white;
+}
+.password{
+    font-weight: 600;
+    font-size: larger;
+    position: relative;
+    left: -40px;
+    color: black;
+    bottom: 12px;
+    text-align: center;
+}
+.rol{
+	font-family: "Font Awesome 5 Pro";
+    font-size: 50px;
+    position: relative;
+    top: 23px;
+    left: 200px;
+    color: white;
+}
+.role{
+	font-weight: 600;
+    font-size: larger;
+    position: relative;
+    left: -40px;
+    color: black;
+    bottom: 12px;
+    text-align: center;
+}	
+.state{
+	font-family: "Font Awesome 5 Pro";
+    font-size: 50px;
+    position: relative;
+    top: 23px;
+    left: 200px;
+    color: white;
+}
+.estado{
+	font-weight: 600;
+    font-size: larger;
+    position: relative;
+    left: -40px;
+    color: black;
+    bottom: 12px;
+    text-align: center;
+}

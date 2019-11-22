@@ -1,7 +1,7 @@
 <?php
 use Migrations\AbstractMigration;
 
-class CreateCustomersTable extends AbstractMigration
+class CreateteachersTable extends AbstractMigration
 {
     /**
      * Change Method.
@@ -12,20 +12,15 @@ class CreateCustomersTable extends AbstractMigration
      */
     public function change()
     {
-        $table = $this->table('customers');
+        $table = $this->table('teachers');
         $table->addColumn('name', 'string')
               ->addColumn('last_name', 'string') 
               ->addColumn('birth_date', 'date') 
+              ->addColumn('matricula', 'string')
               ->addColumn('street', 'string')
               ->addColumn('neighborhood', 'string')
               ->addColumn('created', 'datetime')
               ->addColumn('modified', 'datetime')
               ->create();
-        $refTable = $this->table('customers');
-        $refTable->addColumn('user_id', 'integer', array('signed' => 'disable'))
-              ->addForeignKey('user_id', 'users', 'id', array('delete' => 'CASCADE', 'update' => 'NO_ACTION'))
-                 ->update();        
-
-
     }
 }

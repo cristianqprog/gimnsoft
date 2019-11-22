@@ -16,6 +16,6 @@ class CreateRolesTable extends AbstractMigration
         $roles->addColumn('rol_description','string',['limit'=>30])
              ->create();
 
-        
+       
     }
 }
